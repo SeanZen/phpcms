@@ -1,0 +1,105 @@
+{template header}
+    <section id="contact-info">
+        <div class="center">                
+            <h2>联系我们</h2>
+            <p class="lead">安徽马鞍山市花山区名都财富广场阳光大厦底商</p>
+        </div>
+        <div class="gmap-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center">
+                        <div class="gmap">
+                            <img class="img-responsive fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="statics/images/ads/1.png" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 map-content">
+                        <ul class="row">
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>前台</h5>
+                                    <p>业务合作咨询</p>									
+                                    <p>Phone:0555-2260888  <br>
+                                    Email Address:info@domain.com</p>
+                                </address>
+
+                                <address>
+                                    <h5>南京晨报马鞍山区域</h5>
+                                    <p>周一至周日9:00-12:00，14:30-18:00，法定节假日除外<br>
+                                    Tumon, MP 96911</p>                                
+                                    <p>Phone:0555-2266907<br>
+                                    Mobile:15205555610</p>
+                                </address>
+                            </li>
+
+
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>扬子晚报马鞍山区域</h5>
+                                    <p>业务合作咨询</p>
+                                    <p>Phone:13865550058<br>
+                                   Mobile:info@domain.com</p>
+                                </address>
+
+                                <address>
+                                    <h5>新媒体中心</h5>
+                                    <p>业务合作咨询</p>
+                                    <p>Phone:2266108<br>
+                                   Mobile:13033107331</p>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  <!--/gmap_area -->
+
+    <section id="contact-page fadeInDown">
+        <div class="container">
+            <div class="center">        
+                <h2>Drop Your Message</h2>
+                <p class="lead">欢迎留言咨询.</p>
+            </div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" class="form-control">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="message" id="message" required class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                        </div>
+                    </div>
+                </form> 
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
+
+   	
+		     <div class="clear"></div>
+{template footer}

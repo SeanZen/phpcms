@@ -1,0 +1,41 @@
+{template header}
+	   <section id="showbox">	   
+	   	  <div class="container fadeInDown">
+	   	  		<div class="topimg"><img src="statics/images/ads/top.png" ></div>
+	   	  		<div class="s_show">
+	   	  			<div class="show_t">{$title}</div>
+	   	  			<div class="show_st">
+	   	            <ul><li><span class="glyphicon glyphicon-heart-empty"></span>来源：{$laiyuan}</li>
+	   	            	<li><span class="glyphicon glyphicon-time"></span>发布时间：{date("Y-m-d H:i:s", $updatetime)}</li>
+	   	            	<li><span class="glyphicon glyphicon-pencil"></span>发布者：{$username}</li>
+	   	            	
+	   	            </ul>
+	   	  			</div><!--标题end-->
+	   	  			{$content}
+	   	  			
+					  <div class="share right">
+					<!-- JiaThis Button BEGIN -->
+					<div class="jiathis_style">
+					<a class="jiathis_button_qzone"></a>
+					<a class="jiathis_button_tsina"></a>
+					<a class="jiathis_button_tqq"></a>
+					<a class="jiathis_button_weixin"></a>
+					<a class="jiathis_button_renren"></a>
+					<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+					</div>
+					<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+					<!-- JiaThis Button END -->
+					  </div>
+					   <div class="clear"></div>
+					<div class="articlebook">
+                    {if $prev_page}<h2><strong>上一篇：</strong><a href="{$prev_page['url']}">{$prev_page['title']}</a> </h2>{/if}
+                    {if $next_page}<h2><strong>下一篇：</strong><a href="{$next_page['url']}">{$next_page['title']}</a> </h2>{/if}
+					</div> 
+	   	  		</div>
+   	  
+	   	  </div>
+	   	</section>
+		
+	
+		     <div class="clear"></div>
+{template footer}
